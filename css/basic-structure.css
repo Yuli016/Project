@@ -2,7 +2,18 @@ body {
   width: 100%;
   margin: 0;
   background-color: #f2f2f2;
+  overflow-x: hidden;
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Poppins&display=swap');
+}
+
+span {
+  font-family: 'Poppins', sans-serif;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+span#design {
+  font-family: 'Playfair Display', serif;
+  padding: 0;
 }
 
 p {
@@ -20,19 +31,29 @@ h1 {
   color: #8d3f3f;
 }
 
-h3 {
-  font-size: 2vw;
-}
-
 h2 {
   font-size: 3vw;
   color: #404040;
+  padding: 0vh 2vw 0vh 2vw;
+}
+
+@media (max-width: 740px) {
+  #center-box h2 , .center {
+    font-size: 6.5vw;
+  }
 }
 
 #center-box p {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5vw;
   color: black;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+@media (max-width: 600px) {
+  #center-box p {
+    font-size: 3.5vw;
+  }
 }
 
 @media (max-width: 600px) {
@@ -51,5 +72,84 @@ a {
 
 #center-box {
   padding: 15px;
-  margin: 2vh 10vw 2vh 10vw;
+  margin: 2vh 5vw 2vh 5vw;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 5vw;
+  }
+}
+
+#red {
+  color: #8d3f3f;
+  text-align: center;
+  margin: auto;
+}
+
+/* videos settings */
+.video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 20px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #8d3f3f;
+  margin: auto;
+  text-align: center;
+}
+
+.button1:hover {
+  background-color: #8d3f3f;
+  color: white;
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  margin: 10px auto 35px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  margin: 0px 15px 15px;
+  min-width: 130px;
 }

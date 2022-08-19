@@ -2,7 +2,11 @@ footer {
   background-color: #404040;
   width: 100%;
   color: white;
-  padding: 2vh 10vw 2vh 10vw;
+  padding: 2vh 5vw 2vh 5vw;
+}
+
+#left {
+  text-align: left;
 }
 
 footer a {
@@ -17,5 +21,5 @@ a:hover {
 }
 
 .color-change {
-  border: ##8d3f3f 2px solid;
+  border: #8d3f3f 2px solid;
 }
